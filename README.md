@@ -1,61 +1,60 @@
-# 🔐 Password Manager
+# Password Manager
 
-Um gerenciador de senhas simples e eficiente, desenvolvido com **Python** e **Tkinter**, utilizando conceitos de **Programação Orientada a Objetos (OOP)**.
+A simple password manager built with Python and Tkinter. This application allows you to generate strong passwords and save them securely in a local text file.
 
-## 📌 Funcionalidades
+## Features
 
-- **Gerador de Senhas Seguras** 🔑  
-  - Gera senhas aleatórias e seguras, com letras, números e símbolos.
-  - Copia automaticamente a senha para a área de transferência.
-  
-- **Armazenamento de Senhas** 💾  
-  - Salva as senhas em um arquivo `data.txt`, junto com o site e e-mail associado.
+- Generate random strong passwords.
+- Store website credentials (website, email/username, and password).
+- Copy generated passwords to the clipboard automatically.
+- Simple and user-friendly interface using Tkinter.
 
-## 🛠️ Tecnologias Utilizadas
+## Installation
 
-- **Python** 🐍  
-- **Tkinter** (Interface gráfica) 🎨  
-- **pyperclip** (Copia a senha gerada automaticamente para a área de transferência) 📋  
+### Prerequisites
 
-## 🚀 Como Executar
+- Python 3.x installed
+- Required dependencies: `tkinter`, `pyperclip`
 
-1. **Clone o repositório**  
-   ```bash
-   git clone https://github.com/seu-usuario/password-manager.git
-   cd password-manager
-   ```
+### Install Dependencies
 
-2. **Crie um ambiente virtual (opcional, mas recomendado)**  
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # Para Linux/Mac
-   venv\Scripts\activate  # Para Windows
-   ```
+Ensure you have `pyperclip` installed. You can install it using:
 
-3. **Instale as dependências**  
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Execute o programa**  
-   ```bash
-   python main.py
-   ```
-
-## 📁 Estrutura do Projeto
-
-```
-password-manager/
-│── password_generator.py  # Classe para gerar senhas seguras
-│── data_manager.py        # Classe responsável por salvar as senhas
-│── ui.py                  # Interface gráfica do aplicativo
-│── main.py                # Arquivo principal para rodar o app
-│── data.txt               # Arquivo onde as senhas são salvas
-│── logo.png               # Logo do aplicativo
-│── requirements.txt       # Lista de dependências do projeto
-│── README.md              # Documentação do projeto
+```bash
+pip install pyperclip
 ```
 
-## 📜 Licença
+On Linux, you may also need to install `xclip` or `xsel` for clipboard functionality:
 
-Este projeto é de código aberto e está licenciado sob a **MIT License**.
+```bash
+sudo apt-get install xclip
+```
+
+## Usage
+
+Run the script:
+
+```bash
+python main.py
+```
+
+## Project Structure
+
+```
+Password-Manager/
+│── password_manager.py
+│── ui.py
+│── password_generator.py
+│── data_manager.py
+│── README.md
+│── logo.png
+```
+
+- `ui.py` - Handles the graphical interface.
+- `password_generator.py` - Generates secure passwords.
+- `data_manager.py` - Saves and manages credentials.
+- `main.py` - Runs the application.
+
+## License
+
+This project is open-source and available under the MIT License.
