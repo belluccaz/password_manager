@@ -12,5 +12,3 @@
 
 
 ### Feel free to clone this repo and run in your local environment.
-
-@thematrixbunny
